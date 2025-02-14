@@ -6,17 +6,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--sidebar-background))",
-        foreground: "hsl(var(--sidebar-foreground))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--sidebar-primary))",
-          foreground: "hsl(var(--sidebar-primary-foreground))",
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         accent: {
-          DEFAULT: "hsl(var(--sidebar-accent))",
-          foreground: "hsl(var(--sidebar-accent-foreground))",
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
-        border: "hsl(var(--sidebar-border))",
+        border: "hsl(var(--border))",
+        ring: "hsl(var(--ring))",
       },
     },
   },

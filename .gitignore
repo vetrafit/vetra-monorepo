@@ -1,4 +1,31 @@
+# dependencies
 node_modules/
 pnpm-lock.yaml
 dist/
 .env
+.turbo
+.next
+build
+out
+
+# testing
+coverage
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# turbo
+.turbo
+
+# env files
+.env*
+!.env.example
+
+*.cookie

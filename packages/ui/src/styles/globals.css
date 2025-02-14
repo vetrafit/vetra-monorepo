@@ -5,24 +5,28 @@
 /* Remove @tailwind directives, keep only your custom styles */
 @layer base {
   :root {
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 210 33% 98%; /* #F8F9FA */
+    --foreground: 222 47% 11%; /* #141E33 */
+    --primary: 222 47% 31%; /* #314878 */
+    --primary-foreground: 210 40% 98%; /* #F8FAFD */
+    --secondary: 221 83% 53%; /* #3B82F6 */
+    --secondary-foreground: 210 40% 98%; /* #F8FAFD */
+    --accent: 210 40% 96%; /* #F1F5F9 */
+    --accent-foreground: 222 47% 11%; /* #141E33 */
+    --border: 214 32% 91%; /* #E2E8F0 */
+    --ring: 222 47% 31%; /* #314878 */
   }
   .dark {
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 222 96% 5%; /* #020717 */
+    --foreground: 210 40% 98%; /* #F8FAFD */
+    --primary: 221 83% 53%; /* #3B82F6 */
+    --primary-foreground: 222 47% 11%; /* #141E33 */
+    --secondary: 217 33% 17%; /* #1E293B */
+    --secondary-foreground: 210 40% 98%; /* #F8FAFD */
+    --accent: 217 33% 17%; /* #1E293B */
+    --accent-foreground: 210 40% 98%; /* #F8FAFD */
+    --border: 217 33% 17%; /* #1E293B */
+    --ring: 221 83% 53%; /* #3B82F6 */
   }
 }
 @layer base {
