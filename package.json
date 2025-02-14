@@ -1,32 +1,23 @@
 {
   "name": "vetra-monorepo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "pnpm --recursive run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "private": true,
-  "packageManager": "pnpm@10.3.0",
-  "devDependencies": {
-    "prisma": "^6.3.0",
-    "turbo": "^2.4.1"
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules && rm -rf .turbo"
   },
-  "dependencies": {
-    "@fastify/cors": "^10.0.2",
-    "@nestjs/cli": "^11.0.2",
-    "@nestjs/common": "^11.0.9",
-    "@nestjs/config": "^4.0.0",
-    "@nestjs/core": "^11.0.9",
-    "@nestjs/platform-express": "^11.0.9",
-    "@nestjs/platform-fastify": "^11.0.9",
-    "@nestjs/schematics": "^11.0.0",
-    "@nestjs/swagger": "^11.0.3",
-    "@nestjs/testing": "^11.0.9",
-    "@prisma/client": "^6.3.1"
-  }
+  "devDependencies": {
+    "@swc/core": "^1.10.1",
+    "@turbo/gen": "^1.11.3",
+    "prettier": "^3.4.2",
+    "@types/node": "^20.0.0",
+    "@types/tailwindcss": "^3.1.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "turbo": "^2.4.2",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@10.3.0"
 }
