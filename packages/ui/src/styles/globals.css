@@ -4,31 +4,82 @@
 
 /* Remove @tailwind directives, keep only your custom styles */
 @layer base {
+  /* Light mode */
   :root {
+    /* === General Background & Text === */
     --background: 210 33% 98%; /* #F8F9FA */
     --foreground: 222 47% 11%; /* #141E33 */
+
+    /* === Primary & Secondary Colors === */
     --primary: 222 47% 31%; /* #314878 */
     --primary-foreground: 210 40% 98%; /* #F8FAFD */
     --secondary: 221 83% 53%; /* #3B82F6 */
     --secondary-foreground: 210 40% 98%; /* #F8FAFD */
+
+    /* === Accent & Muted Colors === */
     --accent: 210 40% 96%; /* #F1F5F9 */
     --accent-foreground: 222 47% 11%; /* #141E33 */
-    --border: 214 32% 91%; /* #E2E8F0 */
+    --muted: 210 30% 92%; /* Slightly darker than accent */
+    --muted-foreground: 222 10% 30%; /* More readable than before */
+
+    /* === UI Borders, Inputs, Popovers === */
+    --border: 214 32% 85%; /* #D8DEE9 */
     --ring: 222 47% 31%; /* #314878 */
+    --input: 210 10% 75%; /* Slightly darker for readability */
+    --popover: 210 40% 96%; /* Light popover */
+    --popover-foreground: 222 47% 11%; /* Text inside popover */
+
+    /* === Cards === */
+    --card: 210 40% 96%; /* Matches popover */
+    --card-foreground: 222 47% 11%; /* Readable card text */
+
+    /* === Destructive/Error Colors === */
+    --destructive: 0 80% 50%; /* Bright red for warnings */
+    --destructive-foreground: 0 0% 98%; /* High contrast for readability */
+
+    /* === Chart Colors (For Future Analytics) === */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
   }
+
+  /* Dark mode */
   .dark {
-    --background: 222 96% 5%; /* #020717 */
+    /* === General Background & Text === */
+    --background: 220 5% 3%; /* #070708 */
     --foreground: 210 40% 98%; /* #F8FAFD */
+
+    /* === Primary & Secondary Colors === */
     --primary: 221 83% 53%; /* #3B82F6 */
     --primary-foreground: 222 47% 11%; /* #141E33 */
     --secondary: 217 33% 17%; /* #1E293B */
     --secondary-foreground: 210 40% 98%; /* #F8FAFD */
+
+    /* === Accent & Muted Colors === */
     --accent: 217 33% 17%; /* #1E293B */
     --accent-foreground: 210 40% 98%; /* #F8FAFD */
+    --muted: 220 5% 10%; /* Slightly lighter than background */
+    --muted-foreground: 220 10% 55%; /* Softer than white, readable */
+
+    /* === UI Borders, Inputs, Popovers === */
     --border: 217 33% 17%; /* #1E293B */
     --ring: 221 83% 53%; /* #3B82F6 */
+    --input: 220 10% 48%; /* #1E293B */
+    --popover: 220 5% 5%; /* Darker popover */
+    --popover-foreground: 210 40% 98%; /* White text */
+
+    /* === Cards === */
+    --card: 220 5% 5%; /* Same as popover */
+    --card-foreground: 210 40% 98%; /* White text */
+
+    /* === Destructive/Error Colors === */
+    --destructive: 0 62.8% 30.6%; /* Darker red */
+    --destructive-foreground: 0 0% 98%; /* High contrast */
   }
 }
+
 @layer base {
   * {
     @apply border-border;
