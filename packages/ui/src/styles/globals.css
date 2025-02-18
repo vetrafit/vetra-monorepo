@@ -11,7 +11,7 @@
     --foreground: 222 47% 11%; /* #141E33 */
 
     /* === Primary & Secondary Colors === */
-    --primary: 222 47% 31%; /* #314878 */
+    --primary: 146 66% 43%; /* #1c8a4b */
     --primary-foreground: 210 40% 98%; /* #F8FAFD */
     --secondary: 221 83% 53%; /* #3B82F6 */
     --secondary-foreground: 210 40% 98%; /* #F8FAFD */
@@ -52,7 +52,7 @@
     --foreground: 210 40% 98%; /* #F8FAFD */
 
     /* === Primary & Secondary Colors === */
-    --primary: 221 83% 53%; /* #3B82F6 */
+    --primary: 146 66% 43%; /* #1c8a4b */
     --primary-foreground: 222 47% 11%; /* #141E33 */
     --secondary: 217 33% 17%; /* #1E293B */
     --secondary-foreground: 210 40% 98%; /* #F8FAFD */
