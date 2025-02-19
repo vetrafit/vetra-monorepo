@@ -10,7 +10,7 @@
     --foreground: 222 30% 10%; /* Deep neutral gray for text */
 
     /* === Primary & Secondary Colors === */
-    --primary: 146 66% 43%; /* #1c8a4b (Green for actions, buttons, etc.) */
+    --primary: 146 66% 38%; /* #1c8a4b (Green for actions, buttons, etc.) */
     --primary-foreground: 0 0% 98%; /* High contrast white text */
     --secondary: 222 15% 30%; /* Deep neutral gray */
     --secondary-foreground: 0 0% 98%; /* White for contrast */
